@@ -1,0 +1,27 @@
+{
+  "name": "markedown_to_html",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lennobay/haufenet_com.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "bugs": {
+    "url": "https://github.com/lennobay/haufenet_com/issues"
+  },
+  "homepage": "https://github.com/lennobay/haufenet_com#readme",
+  "dependencies": {
+    "fs": "^0.0.1-security"
+  }
+}
