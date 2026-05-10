@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Haufenet | Projects - Heatmap </title>
+    <link rel="stylesheet" href="/index.css">
+</head>
+
+<body>
+    <header>
+
+        <div>
+            <h1>HFT</h1>
+        </div>
+        <div id="header-options">
+            <p onclick="window.location.href = '/#docs'">DOCS</p>
+            <p onclick="window.location.href = '/#projects'">PROJECTS</p>
+        </div>
+        <div>
+            <h2 onclick="window.location.href = '/portal'">Portal</h2>
+            <p onclick="openmenu()" id="menu-button">Menu</p>
+        </div>
+    </header>
+
+    <div class="content-up">
+        <div class="content">
+
+           <h1>Freifunk Heatmap</h1>
+           <p>I am further developing a map, created by p-schwarz.de. As he gave me the task to add a heatmap to it, for better information on the number of users of the Free Wifi. So I took up the task and started it, approximately a Year or ago. I am not finished ...</p>
+           <p>Mainly because I develop a fear of programming, when I have other things to do, and because i am lazy. But as June, comes closer and close I need to finish it. I hope so ...</p>
+        </div>
+    </div>
+
+    <footer>
+
+        <div>
+            <p onclick="window.location.href = '/imprint'">Imprint</p>
+            <p onclick="window.location.href = '/privacy'">Privacy</p>
+        </div>
+        <div>
+            <p style="font-weight: bold; color: hsl(0 0% 95%);">&copy; haufenet.com</p>
+
+        </div>
+
+
+    </footer>
+
+    <menu id="menu">
+        <div class="menu-down">
+            <p onclick="closemenu()">Close</p>
+            <p onclick="window.location.href = '/portal'">Portal</p>
+            <p onclick="window.location.href = '/#docs'">DOCS</p>
+            <p onclick="window.location.href = '/#projects'">PROJECTS</p>
+        </div>
+    </menu>
+
+
+</body>
+<script>
+    function openmenu() {
+        document.getElementById("menu").style.display = "flex";
+    }
+    function closemenu() {
+        document.getElementById("menu").style.display = "none"
+    }
+</script>
+
+</html>

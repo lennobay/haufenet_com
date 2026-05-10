@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Haufenet | Home</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+    <header>
+
+        <div>
+            <h1>HFT</h1>
+        </div>
+        <div id="header-options">
+            <p onclick="window.location.href = '/#docs'">DOCS</p>
+            <p onclick="window.location.href = '/#projects'">PROJECTS</p>
+        </div>
+        <div>
+            <h2 onclick="window.location.href = '/portal'">Portal</h2>
+            <p onclick="openmenu()" id="menu-button">Menu</p>
+        </div>
+    </header>
+    <hero>
+        <h1 style=" font-family: sans-serif; display: flex; justify-content: center;
+        align-items: center; color: white;">Hi. How are you doing?</h1>
+    </hero>
+
+    <h2 id="projects" style=" font-family: sans-serif; align-items: center;
+    justify-content: center;
+    display: flex; color: hsl(0 0% 80%);">Projects</h2>
+    <projects>
+        <projects-sub onclick="window.location.href='/projects/this-website.html'">
+            <h2>This Website</h2>
+            <p>Creating this Website ...</p>
+        </projects-sub>
+        <projects-sub onclick="window.location.href = '/projects/heatmap.html'">
+            <h2>Freifunk Map</h2>
+            <p>Adding a Heatmap feat..</p>
+        </projects-sub>
+        <projects-sub onclick="window.location.href = '/projects/byd-film-website.html'">
+            <h2>BYD-Film Website</h2>
+            <p>Creating a photography Websi...</p>
+        </projects-sub>
+        <projects-sub onclick="window.location.href = '/projects/music-vote.html'">
+            <h2>MusicVote</h2>
+            <p>Making an Alternative fo...</p>
+        </projects-sub>
+    </projects>
+    <h2 id="docs" style="font-family: sans-serif; align-items: center; justify-content: center; display: flex; color: white;">Docs</h2>
+    <docs>
+        <docs-sub>
+            <h3>Article still in work</h3>
+        </docs-sub>
+    </docs>
+
+
+    <footer>
+
+        <div>
+            <p onclick="window.location.href = '/imprint.html'">Imprint</p>
+            <p onclick="window.location.href = '/privacy.html'">Privacy</p>
+        </div>
+        <div>
+            <p style="font-weight: bold; color: hsl(0 0% 95%);">&copy; haufenet.com</p>
+
+        </div>
+
+
+    </footer>
+
+    <menu id="menu">
+        <div class="menu-down">
+            <p onclick="closemenu()">Close</p>
+            <p onclick="window.location.href = '/portal'">Portal</p>
+            <p onclick="window.location.href = '/#docs'">DOCS</p>
+            <p onclick="window.location.href = '/#projects'">PROJECTS</p>
+        </div>
+    </menu>
+
+
+</body>
+<script>
+    function openmenu() {
+        document.getElementById("menu").style.display = "flex";
+    }
+    function closemenu() {
+        document.getElementById("menu").style.display = "none"
+    }
+</script>
+
+</html>

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Haufenet | Projects - This Website</title>
+    <link rel="stylesheet" href="/index.css">
+</head>
+
+<body>
+    <header>
+
+        <div>
+            <h1>HFT</h1>
+        </div>
+        <div id="header-options">
+            <p onclick="window.location.href = '/#docs'">DOCS</p>
+            <p onclick="window.location.href = '/#projects'">PROJECTS</p>
+        </div>
+        <div>
+            <h2 onclick="window.location.href = '/portal'">Portal</h2>
+            <p onclick="openmenu()" id="menu-button">Menu</p>
+        </div>
+    </header>
+
+    <div class="content-up">
+        <div class="content">
+            <h1>The making of this Website</h1>
+            <i>Status: Active recreation</i>
+            <p>I started to create this Website a long time ago. Featuring diffrent iterations and designs. Form Neo Brutalistic ( I tried) to typical mainstream design. </p>
+            <p>Everytime, it featured diffrent usages. Either only presentation of my Projects or just to show I exist. Everytime I say I am happy with it, I am sure I will change it. That is why I have not versioncontrol.</p>
+            
+        </div>
+    </div>
+
+    <footer>
+
+        <div>
+            <p onclick="window.location.href = '/imprint'">Imprint</p>
+            <p onclick="window.location.href = '/privacy'">Privacy</p>
+        </div>
+        <div>
+            <p style="font-weight: bold; color: hsl(0 0% 95%);">&copy; haufenet.com</p>
+
+        </div>
+
+
+    </footer>
+
+    <menu id="menu">
+        <div class="menu-down">
+            <p onclick="closemenu()">Close</p>
+            <p onclick="window.location.href = '/portal'">Portal</p>
+            <p onclick="window.location.href = '/#docs'">DOCS</p>
+            <p onclick="window.location.href = '/#projects'">PROJECTS</p>
+        </div>
+    </menu>
+
+
+</body>
+<script>
+    function openmenu() {
+        document.getElementById("menu").style.display = "flex";
+    }
+    function closemenu() {
+        document.getElementById("menu").style.display = "none"
+    }
+</script>
+
+</html>

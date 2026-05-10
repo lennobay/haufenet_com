@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Haufenet | Project - BYD Film</title>
+    <link rel="stylesheet" href="/index.css">
+</head>
+
+<body>
+    <header>
+
+        <div>
+            <h1>HFT</h1>
+        </div>
+        <div id="header-options">
+            <p onclick="window.location.href = '/#docs'">DOCS</p>
+            <p onclick="window.location.href = '/#projects'">PROJECTS</p>
+        </div>
+        <div>
+            <h2 onclick="window.location.href = '/portal'">Portal</h2>
+            <p onclick="openmenu()" id="menu-button">Menu</p>
+        </div>
+    </header>
+
+    <div class="content-up">
+        <div class="content">
+            <h1>Music Vote</h1>
+            <p>Music Vote will be a Software, where one can choose / wish a music one wants to be played on an Event.</p>
+        </div>
+    </div>
+
+    <footer>
+
+        <div>
+            <p onclick="window.location.href = '/imprint'">Imprint</p>
+            <p onclick="window.location.href = '/privacy'">Privacy</p>
+        </div>
+        <div>
+            <p style="font-weight: bold; color: hsl(0 0% 95%);">&copy; haufenet.com</p>
+
+        </div>
+
+
+    </footer>
+
+    <menu id="menu">
+        <div class="menu-down">
+            <p onclick="closemenu()">Close</p>
+            <p onclick="window.location.href = '/portal'">Portal</p>
+            <p onclick="window.location.href = '/#docs'">DOCS</p>
+            <p onclick="window.location.href = '/#projects'">PROJECTS</p>
+        </div>
+    </menu>
+
+
+</body>
+<script>
+    function openmenu() {
+        document.getElementById("menu").style.display = "flex";
+    }
+    function closemenu() {
+        document.getElementById("menu").style.display = "none"
+    }
+</script>
+
+</html>
